@@ -16,5 +16,13 @@ namespace RecapProject1
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            using (NorthwindContext context = new NorthwindContext())
+            {
+                dgwProduct.DataSource = context.Products.ToList();
+            }
+        }
     }
 }
