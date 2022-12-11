@@ -58,6 +58,7 @@
             this.cbxKategori.Name = "cbxKategori";
             this.cbxKategori.Size = new System.Drawing.Size(210, 21);
             this.cbxKategori.TabIndex = 0;
+            this.cbxKategori.SelectedIndexChanged += new System.EventHandler(this.cbxKategori_SelectedIndexChanged);
             // 
             // lblKategori
             // 
@@ -94,6 +95,7 @@
             this.tbxSearch.Name = "tbxSearch";
             this.tbxSearch.Size = new System.Drawing.Size(210, 20);
             this.tbxSearch.TabIndex = 1;
+            this.tbxSearch.TextChanged += new System.EventHandler(this.tbxSearch_TextChanged);
             // 
             // dgwProduct
             // 

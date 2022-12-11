@@ -13,5 +13,6 @@ namespace RecapProject1
     {
         // We didn't make object mapping, this will searh in DB Products table
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }
