@@ -3,7 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Entities", "Northwind.Entities\Northwind.Entities.csproj", "{289F156D-4166-4D53-80E4-CECDA54D603A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.DataAccess", "Northwind.DataAccess\Northwind.DataAccess.csproj", "{10161404-C208-4287-97FC-AE5B8490E309}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Business", "Northwind.Business\Northwind.Business.csproj", "{B54C4E22-F339-4759-BD7F-FECD1FEFC054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.WebFormsUI", "Northwind.WebFormsUI\Northwind.WebFormsUI.csproj", "{427B3662-3F3E-4C9D-BFEC-EB220BC56EA2}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{289F156D-4166-4D53-80E4-CECDA54D603A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{289F156D-4166-4D53-80E4-CECDA54D603A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{289F156D-4166-4D53-80E4-CECDA54D603A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{289F156D-4166-4D53-80E4-CECDA54D603A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10161404-C208-4287-97FC-AE5B8490E309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10161404-C208-4287-97FC-AE5B8490E309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10161404-C208-4287-97FC-AE5B8490E309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10161404-C208-4287-97FC-AE5B8490E309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B54C4E22-F339-4759-BD7F-FECD1FEFC054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B54C4E22-F339-4759-BD7F-FECD1FEFC054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B54C4E22-F339-4759-BD7F-FECD1FEFC054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B54C4E22-F339-4759-BD7F-FECD1FEFC054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{427B3662-3F3E-4C9D-BFEC-EB220BC56EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427B3662-3F3E-4C9D-BFEC-EB220BC56EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427B3662-3F3E-4C9D-BFEC-EB220BC56EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427B3662-3F3E-4C9D-BFEC-EB220BC56EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
