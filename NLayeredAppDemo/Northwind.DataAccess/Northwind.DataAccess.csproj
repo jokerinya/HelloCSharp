@@ -51,13 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Concrete\NorthwindContext.cs" />
-    <Compile Include="Concrete\ProductDal.cs" />
+    <Compile Include="Abstract\IProductDal.cs" />
+    <Compile Include="Concrete\EntityFramework\NorthwindContext.cs" />
+    <Compile Include="Concrete\EntityFramework\EfProductDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Abstract\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Northwind.Entities\Northwind.Entities.csproj">
       <Project>{289f156d-4166-4d53-80e4-cecda54d603a}</Project>

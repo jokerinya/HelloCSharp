@@ -1,4 +1,7 @@
-﻿using Northwind.DataAccess.Concrete;
+﻿using Northwind.Business.Abstract;
+using Northwind.DataAccess.Abstract;
+using Northwind.DataAccess.Concrete;
+using Northwind.DataAccess.Concrete.EntityFramework;
 using Northwind.Entities.Concrete;
 using System;
 using System.Collections.Generic;
@@ -6,12 +9,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Northwind.Business.Concrete
+namespace Northwind.Business.Concrete.EntityFramework
 {
-    public class ProductManager
+    public class ProductManager : IProductService
     {
-        // Here there is dependency but will deal it later
-        ProductDal _productDal = new ProductDal();
+        // Dependency injection with interface to prevent dependency
+        private IProductDal _productDal;
+
+        public ProductManager(IProductDal productDal)
+        {
+            _productDal = productDal;
+        }
+
         public List<Product> GetAll()
         {
             return _productDal.GetAll();
