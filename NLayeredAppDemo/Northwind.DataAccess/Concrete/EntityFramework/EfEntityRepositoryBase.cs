@@ -41,7 +41,9 @@ namespace Northwind.DataAccess.Concrete.EntityFramework
                 return context.Set<TEntity>().SingleOrDefault(filter);
             }
         }
-
+        // In expression TEntity is filters income value, and filter result will be bool
+        // For example filter: p => p.id == searchId --> p will be TEntity output bool
+        // It will be used like Where(filter) which is equal to Where(p => p.id == searchId)
         public List<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null)
         {
             using (TContext context = new TContext())
