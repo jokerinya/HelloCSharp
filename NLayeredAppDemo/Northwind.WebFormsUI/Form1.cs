@@ -79,34 +79,48 @@ namespace Northwind.WebFormsUI
 
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            _productService.Add(new Product()
+            try
             {
-                ProductName = tbxAddProductName.Text,
-                CategoryId = Convert.ToInt32(cbxAddProductCategoryName.SelectedValue),
-                UnitPrice = Convert.ToDecimal(tbxAddProductUnitInPrice.Text),
-                UnitsInStock = Convert.ToInt16(tbxAddProductUnitInPrice.Text),
-                QuantityPerUnit = tbxAddProductQuantityPerUnit.Text,
-            });
-            MessageBox.Show("Product Added");
-            ListProducts();
+                _productService.Add(new Product()
+                {
+                    ProductName = tbxAddProductName.Text,
+                    CategoryId = Convert.ToInt32(cbxAddProductCategoryName.SelectedValue),
+                    UnitPrice = Convert.ToDecimal(tbxAddProductUnitInPrice.Text),
+                    UnitsInStock = Convert.ToInt16(tbxAddProductUnitInPrice.Text),
+                    QuantityPerUnit = tbxAddProductQuantityPerUnit.Text,
+                });
+                MessageBox.Show("Product Added");
+                ListProducts();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
         }
 
         private void btnUpdateProduct_Click(object sender, EventArgs e)
         {
-            // The important part here is to add the primary key, even if this is a new object
-            // according to primary it will update it
-            _productService.Update(new Product()
+            try
             {
-                // Means selected == dgw.CurrentRow
-                ProductId = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value),
-                ProductName = tbxUpdateProductName.Text,
-                CategoryId = Convert.ToInt32(cbxUpdateProductCategoryName.SelectedValue),
-                UnitPrice = Convert.ToDecimal(tbxUpdateProductUnitPrice.Text),
-                UnitsInStock = Convert.ToInt16(tbxUpdateProductUnitsInStock.Text),
-                QuantityPerUnit = tbxUpdateProductQuantityPerUnit.Text,
-            });
-            MessageBox.Show("Product Updated");
-            ListProducts();
+                // The important part here is to add the primary key, even if this is a new object
+                // according to primary it will update it
+                _productService.Update(new Product()
+                {
+                    // Means selected == dgw.CurrentRow
+                    ProductId = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value),
+                    ProductName = tbxUpdateProductName.Text,
+                    CategoryId = Convert.ToInt32(cbxUpdateProductCategoryName.SelectedValue),
+                    UnitPrice = Convert.ToDecimal(tbxUpdateProductUnitPrice.Text),
+                    UnitsInStock = Convert.ToInt16(tbxUpdateProductUnitsInStock.Text),
+                    QuantityPerUnit = tbxUpdateProductQuantityPerUnit.Text,
+                });
+                MessageBox.Show("Product Updated");
+                ListProducts();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
         }
 
         private void dgwProduct_CellClick(object sender, DataGridViewCellEventArgs e)
