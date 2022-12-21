@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype", "Prototype\Prot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{CED0EA5A-EEE1-450A-BFB7-04F4FFE1D2B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{AA6F32D3-24C8-406A-B679-0CB75C8FD27E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{BC2C35D7-DCEA-4523-9A5D-9F3A79653D44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{CED0EA5A-EEE1-450A-BFB7-04F4FFE1D2B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CED0EA5A-EEE1-450A-BFB7-04F4FFE1D2B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CED0EA5A-EEE1-450A-BFB7-04F4FFE1D2B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA6F32D3-24C8-406A-B679-0CB75C8FD27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA6F32D3-24C8-406A-B679-0CB75C8FD27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA6F32D3-24C8-406A-B679-0CB75C8FD27E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA6F32D3-24C8-406A-B679-0CB75C8FD27E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2C35D7-DCEA-4523-9A5D-9F3A79653D44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2C35D7-DCEA-4523-9A5D-9F3A79653D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2C35D7-DCEA-4523-9A5D-9F3A79653D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2C35D7-DCEA-4523-9A5D-9F3A79653D44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
