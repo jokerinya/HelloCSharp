@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command", "Command\Command.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.csproj", "{01C42115-3315-45EB-BAEA-3241D235DA92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection", "DependencyInjection\DependencyInjection.csproj", "{D8088FBB-AF28-488D-AAC6-C7B4E66AC489}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{01C42115-3315-45EB-BAEA-3241D235DA92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01C42115-3315-45EB-BAEA-3241D235DA92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01C42115-3315-45EB-BAEA-3241D235DA92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8088FBB-AF28-488D-AAC6-C7B4E66AC489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8088FBB-AF28-488D-AAC6-C7B4E66AC489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8088FBB-AF28-488D-AAC6-C7B4E66AC489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8088FBB-AF28-488D-AAC6-C7B4E66AC489}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
